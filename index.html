@@ -1,0 +1,28 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+      iframe {
+        width: 100%;
+        height: 100vh;
+      }
+      body {
+        margin: 0px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="main" frameborder="0" ></iframe>
+    <script>
+      var base = "https://script.google.com/macros/s/AKfycbwdVIeG0NpHaqeoWOZ_uzLmLQ9DEctLLeEnrfGEKV5lk0k6sWY/exec";
+      var url = base + window.location.search;
+      document.getElementById("main").src = url;
+    </script>
+  </body>
+</html>
